@@ -84,10 +84,6 @@ public class healthPoints : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D bulletHit)
     {
-        string checkPlayer1 = player1.GetComponent<PlayerPolarity>().CheckString();
-        string checkPlayer2 = player2.GetComponent<PlayerPolarity>().CheckString();
-        if (checkPlayer1 == checkPlayer2)
-        {
             if (bulletHit.gameObject.tag == "PistolBullet")
             {
                 damage = 6f;
@@ -105,7 +101,6 @@ public class healthPoints : MonoBehaviour
                 damage = 12f;
                 hp = hp - damage;
             }
-        }
     }
     void OnBecameInvisible()
     {
