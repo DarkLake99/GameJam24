@@ -9,6 +9,8 @@ TagManager:
   - Player 2
   - Portal
   - platform
+  - Pistol
+  - Laser
   layers:
   - Default
   - TransparentFX

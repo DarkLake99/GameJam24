@@ -21,6 +21,7 @@ public class SpawnWeapons : MonoBehaviour {
             int randWeaInd = Random.Range(0, weapons.Length);
             int randWeaLocInd = Random.Range(0, spawnWeaLocations.Length);
             Instantiate(weapons[randWeaInd], spawnWeaLocations[randWeaLocInd].position, Quaternion.identity);
+            timeWeaSpawns = timeWeaBTWs;
         }
         else
         {
