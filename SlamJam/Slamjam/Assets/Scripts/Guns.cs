@@ -7,14 +7,13 @@ public class Guns : MonoBehaviour {
 
     public Transform firePoint;
     public GameObject bulletPrefab;
-<<<<<<< HEAD
+
     public string fireButton = "Fire1";
     //public movement playerControl;
     public PlatformerCharacter2D characterController;
-=======
-    public string fireButton = "Fire1";
+
     public movement playerControl;
->>>>>>> 97342439687cf209cd17545ecdc3e86af8a4fbe4
+
     public float bulletVelocity = 10f;
     public float bulletDistance = 3f;
     // Update is called once per frame
