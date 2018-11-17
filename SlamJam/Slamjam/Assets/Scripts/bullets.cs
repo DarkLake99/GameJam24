@@ -7,8 +7,7 @@ public class bullets : MonoBehaviour
     public float speed = 20f;
     public float lifeTime = 3f;
     public Rigidbody2D rb;
-   
-
+    
 
     // Use this for initialization
     public void InvokeDestroySelf()

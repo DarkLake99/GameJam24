@@ -17,7 +17,9 @@ public class healthPoints : MonoBehaviour
     //public GameObject play1win;
     //public GameObject play2win;
     //public PlayerPolarity portal;
-     void Start()
+    public GameObject player1;
+    public GameObject player2;
+    void Start()
     {
         saveTime = timeOut;
     }
@@ -25,7 +27,7 @@ public class healthPoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(invisible)
+        if (invisible)
         {
             timeOut -= Time.deltaTime;
         }
@@ -44,24 +46,28 @@ public class healthPoints : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D bulletHit)
     {
-        if (bulletHit.gameObject.tag == "PistolBullet")
+        string checkPlayer1 = player1.GetComponent<PlayerPolarity>().CheckString();
+        string checkPlayer2 = player2.GetComponent<PlayerPolarity>().CheckString();
+        if (checkPlayer1 == checkPlayer2)
         {
-            damage = 6f;
-            // Debug.Log(bulletHit.name);
-            //Debug.Break();
-            hp = hp - damage;
+            if (bulletHit.gameObject.tag == "PistolBullet")
+            {
+                damage = 6f;
+                // Debug.Log(bulletHit.name);
+                //Debug.Break();
+                hp = hp - damage;
+            }
+            else if (bulletHit.gameObject.tag == "LaserBullet")
+            {
+                damage = 4f;
+                hp = hp - damage;
+            }
+            else if (bulletHit.gameObject.tag == "BlastBullet")
+            {
+                damage = 12f;
+                hp = hp - damage;
+            }
         }
-        else if(bulletHit.gameObject.tag == "LaserBullet")
-        {
-            damage = 4f;
-            hp = hp - damage; 
-        }
-        else if(bulletHit.gameObject.tag == "BlastBullet")
-        {
-            damage = 12f;
-            hp = hp - damage;
-        }
-
     }
     void OnBecameInvisible()
     {
