@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  lifeTime: 3
   rb: {fileID: 50591605448050454}
 --- !u!212 &212389913163884636
 SpriteRenderer:

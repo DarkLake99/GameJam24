@@ -30,7 +30,7 @@ public class movement : MonoBehaviour
     }
     void Player()
     {
-        if(Input.GetButton(HorizontalAxis)||Input.GetButtonDown(VerticalAxis))
+       //if(Input.GetButton(HorizontalAxis)||Input.GetButtonDown(VerticalAxis))
         {
             float horz = Input.GetAxis(HorizontalAxis);
             float vert = Input.GetAxis(VerticalAxis);
