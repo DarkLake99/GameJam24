@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   viewPoint: {fileID: 1500402756379194, guid: 36d7a49f1572d004eaae876c1b4222e7, type: 2}
+  timeAlive: 10
   useOrthoProjection: 0
   viewingAngle: 16
   radius: 0.6
@@ -171,9 +172,9 @@ MonoBehaviour:
     rgba: 4282732344
   - serializedVersion: 2
     rgba: 4281609235
-  rotationXY: 28720.762
+  rotationXY: 29534.66
   rotationYZ: 0
-  rotationZX: 28720.762
+  rotationZX: 29534.66
   rotationXW: 0
-  rotationYW: 28720.762
+  rotationYW: 29534.66
   rotationZW: 0

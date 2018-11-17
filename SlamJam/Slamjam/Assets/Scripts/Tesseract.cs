@@ -18,6 +18,7 @@ public class Tesseract : MonoBehaviour
 
     [Header("Render Setup")]
     public GameObject viewPoint;
+    public float timeAlive;
 	public bool useOrthoProjection = false;
 	public float viewingAngle = 25; // for orthographic projection
 	public float radius = 2; // for parallel projection
@@ -70,7 +71,7 @@ public class Tesseract : MonoBehaviour
 
 		_mesh.vertices = _vertices;
 
-        Invoke("destroyObject", 10f);
+        Invoke("destroyObject", timeAlive);
 	}
 
 	/// <summary>

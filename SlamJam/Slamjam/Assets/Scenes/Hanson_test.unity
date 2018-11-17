@@ -137,7 +137,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 89305176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd25c783de7c40458e3cd033e0af171, type: 3}
+  m_Script: {fileID: 11500000, guid: d886bf0a21c242f4cb442f5fd429845d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portal: {fileID: 1354050568585686, guid: 221a07994e29571458d9340799c1646c, type: 2}
@@ -146,7 +146,6 @@ MonoBehaviour:
   - {fileID: 343610902}
   - {fileID: 2038110023}
   timeBTWspawns: 10
-  UISystem: {fileID: 1993424093666606, guid: 93a8bc99ebfd9e74ab837dac51ad3b10, type: 2}
 --- !u!4 &89305178
 Transform:
   m_ObjectHideFlags: 0

@@ -7,11 +7,6 @@ public class GameManager : MonoBehaviour {
     public static bool gameIsPaused = false;
     public GameObject pauseMenu;
     public KeyCode pauseButton;
-    //Portal
-    public GameObject portal;
-    public Transform[] spawnLocations;
-    private float timespawns;
-    public float timeBTWspawns;
     //Weapons
     public GameObject[] weapons;
     public Transform[] spawnWeaLocations;
@@ -20,7 +15,6 @@ public class GameManager : MonoBehaviour {
     //Use this for initialization
     private void Start()
     {
-        timespawns = timeBTWspawns;
         timeWeaSpawns = timeWeaBTWs;
     }
      // Update is called once per frame
@@ -39,17 +33,7 @@ public class GameManager : MonoBehaviour {
 
         }
 
-        //Portal
-        if (timespawns <= 0)
-        {
-            int randLocaInd = Random.Range(0, spawnLocations.Length);
-            Instantiate(portal, spawnLocations[randLocaInd].position, Quaternion.identity);
-            timespawns = timeBTWspawns;
-        }
-        else
-        {
-            timespawns -= Time.deltaTime;
-        }
+        //weapons
         if (timeWeaSpawns <= 0)
         {
             int randWeaInd = Random.Range(0, weapons.Length);
