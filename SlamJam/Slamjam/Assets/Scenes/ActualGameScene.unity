@@ -6263,8 +6263,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons:
-  - {fileID: 1617850397755320, guid: 62cb2c5cf49fa83408c70197cdcc3692, type: 2}
-  - {fileID: 1022156168794988, guid: 5f0905fafe28dfc47a7ab564379f993e, type: 2}
+  - {fileID: 1384772590555200, guid: 156f83ddcf8aa5e4dba6b6bcddf9f498, type: 2}
+  - {fileID: 1030911771682612, guid: f8596243742c3c14ead156d793b064e9, type: 2}
+  - {fileID: 1871061179902414, guid: 6ca0ca0298e67f84ab1a7d80467a8b37, type: 2}
   spawnWeaLocations:
   - {fileID: 824246922}
   - {fileID: 942454343}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerCollision : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player 1" || other.gameObject.tag == "Player 2")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
         }

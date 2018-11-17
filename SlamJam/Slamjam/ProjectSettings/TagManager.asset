@@ -11,6 +11,10 @@ TagManager:
   - platform
   - Pistol
   - Laser
+  - Blast
+  - BlastBullet
+  - PistolBullet
+  - LaserBullet
   layers:
   - Default
   - TransparentFX
