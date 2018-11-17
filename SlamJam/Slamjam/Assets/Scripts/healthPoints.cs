@@ -11,38 +11,38 @@ public class healthPoints : MonoBehaviour
     public float hp = 100f;
     public float damage = 2f;
     private bool invisible=false;
-<<<<<<< HEAD
-    public UnityEvent dead1;
-    public UnityEvent dead2;
-    public float timeOut=10f;
-    public float saveTime;
 
-    //  public GameManager gameEffect;
-    public GameObject player1;
-    public GameObject play2;
-    //public PlayerPolarity portal;
-     void Start()
-    {
-        saveTime = timeOut;
-    }
+    //public UnityEvent dead1;
+    //public UnityEvent dead2;
+    //public float timeOut=10f;
+    //public float saveTime;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(invisible)
-        {
-            timeOut -= Time.deltaTime;
-            if (player1.GetComponent<healthPoints>().hp <= 0)
-            {
-                dead1.Invoke();
-             //   deathAl.Play();
-            }
-            else if (play2.GetComponent<healthPoints>().hp <= 0)
-            {
-                dead2.Invoke();
-            }
-=======
-   
+    ////  public GameManager gameEffect;
+    //public GameObject player1;
+    //public GameObject play2;
+    ////public PlayerPolarity portal;
+    // void Start()
+    //{
+    //    saveTime = timeOut;
+    //}
+
+    //// Update is called once per frame
+    //void Update()
+    //{
+        //if (invisible)
+        //{
+        //    timeOut -= Time.deltaTime;
+        //    if (player1.GetComponent<healthPoints>().hp <= 0)
+        //    {
+        //        dead1.Invoke();
+        //        //   deathAl.Play();
+        //    }
+        //    else if (play2.GetComponent<healthPoints>().hp <= 0)
+        //    {
+        //        dead2.Invoke();
+        //    }
+
+        //}
     public float timeOut=10f;
     public float saveTime;
     //  public GameManager gameEffect;
@@ -62,7 +62,7 @@ public class healthPoints : MonoBehaviour
         if (invisible)
         {
             timeOut -= Time.deltaTime;
->>>>>>> 1bb482e9bbbf447dc9951955d2d001e0e90486a6
+
         }
        
         if (hp <= 0 || timeOut <= 0)
@@ -74,18 +74,14 @@ public class healthPoints : MonoBehaviour
     }
     void Death()
     {
-<<<<<<< HEAD
+
 
         Destroy(gameObject);
             SceneManager.LoadScene(2);
     }
 
-=======
-        Destroy(gameObject);
-        SceneManager.LoadScene(2);
-    }
 
->>>>>>> 1bb482e9bbbf447dc9951955d2d001e0e90486a6
+    
     void OnTriggerEnter2D(Collider2D bulletHit)
     {
         string checkPlayer1 = player1.GetComponent<PlayerPolarity>().CheckString();
