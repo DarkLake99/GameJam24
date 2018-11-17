@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1354050568585686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -172,9 +172,9 @@ MonoBehaviour:
     rgba: 4282732344
   - serializedVersion: 2
     rgba: 4281609235
-  rotationXY: 29674.867
+  rotationXY: 29696.879
   rotationYZ: 0
-  rotationZX: 29674.867
+  rotationZX: 29696.879
   rotationXW: 0
-  rotationYW: 29674.867
+  rotationYW: 29696.879
   rotationZW: 0

@@ -17,9 +17,21 @@ public class PlayerPolarity : MonoBehaviour {
             {
                 positiveSide = true;
             }
+            Destroy(collision.gameObject);
         }
     }
-
+   
+    public string CheckString()
+    {
+        if (positiveSide)
+        {
+            return "true";
+        }
+        else
+        {
+            return "false";
+        }
+    }
     // Update is called once per frame
     void Update () {
 		

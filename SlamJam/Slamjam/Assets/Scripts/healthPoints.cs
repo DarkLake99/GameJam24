@@ -11,6 +11,7 @@ public class healthPoints : MonoBehaviour
     public float hp = 100f;
     public float damage = 2f;
     private bool invisible=false;
+<<<<<<< HEAD
     public UnityEvent dead1;
     public UnityEvent dead2;
     public float timeOut=10f;
@@ -40,6 +41,28 @@ public class healthPoints : MonoBehaviour
             {
                 dead2.Invoke();
             }
+=======
+   
+    public float timeOut=10f;
+    public float saveTime;
+    //  public GameManager gameEffect;
+    //public GameObject play1win;
+    //public GameObject play2win;
+    //public PlayerPolarity portal;
+    public GameObject player1;
+    public GameObject player2;
+    void Start()
+    {
+        saveTime = timeOut;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (invisible)
+        {
+            timeOut -= Time.deltaTime;
+>>>>>>> 1bb482e9bbbf447dc9951955d2d001e0e90486a6
         }
        
         if (hp <= 0 || timeOut <= 0)
@@ -51,31 +74,42 @@ public class healthPoints : MonoBehaviour
     }
     void Death()
     {
+<<<<<<< HEAD
 
         Destroy(gameObject);
             SceneManager.LoadScene(2);
     }
 
+=======
+        Destroy(gameObject);
+        SceneManager.LoadScene(2);
+    }
+
+>>>>>>> 1bb482e9bbbf447dc9951955d2d001e0e90486a6
     void OnTriggerEnter2D(Collider2D bulletHit)
     {
-        if (bulletHit.gameObject.tag == "PistolBullet")
+        string checkPlayer1 = player1.GetComponent<PlayerPolarity>().CheckString();
+        string checkPlayer2 = player2.GetComponent<PlayerPolarity>().CheckString();
+        if (checkPlayer1 == checkPlayer2)
         {
-            damage = 6f;
-            // Debug.Log(bulletHit.name);
-            //Debug.Break();
-            hp = hp - damage;
+            if (bulletHit.gameObject.tag == "PistolBullet")
+            {
+                damage = 6f;
+                // Debug.Log(bulletHit.name);
+                //Debug.Break();
+                hp = hp - damage;
+            }
+            else if (bulletHit.gameObject.tag == "LaserBullet")
+            {
+                damage = 4f;
+                hp = hp - damage;
+            }
+            else if (bulletHit.gameObject.tag == "BlastBullet")
+            {
+                damage = 12f;
+                hp = hp - damage;
+            }
         }
-        else if(bulletHit.gameObject.tag == "LaserBullet")
-        {
-            damage = 4f;
-            hp = hp - damage; 
-        }
-        else if(bulletHit.gameObject.tag == "BlastBullet")
-        {
-            damage = 12f;
-            hp = hp - damage;
-        }
-
     }
     void OnBecameInvisible()
     {
