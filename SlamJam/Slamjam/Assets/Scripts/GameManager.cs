@@ -9,10 +9,26 @@ public class GameManager : MonoBehaviour {
     public static bool gameIsPaused = false;
     public GameObject pauseMenu;
     public KeyCode pauseButton;
+    public bool winner=false;
+    public GameObject play1win;
+    public GameObject play2win;
+    private healthPoints health;
+
     //Use this for initialization
      // Update is called once per frame
     void Update()
     {
+        if(winner)
+        {
+            if (gameObject.tag == "Player 1" && health.hp <=0 )
+            {
+                play1win.SetActive(true);
+            }
+            else if(gameObject.tag == "Player 2" && health.hp <= 0)
+            {
+                play2win.SetActive(true);
+            }
+        }
         //Pause Menu
         if (Input.GetKey(pauseButton))
         {
@@ -35,6 +51,10 @@ public class GameManager : MonoBehaviour {
     public void LoadScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
+        if(sceneIndex==2)
+        {
+            winner = true;
+        }
     }
     public void QuitGame()
     {

@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class healthPoints : MonoBehaviour {
 
     // Use this for initialization
     public float hp = 100f;
-    public GameManager gameEffect;
+  //  public GameManager gameEffect;
     public GameObject play1win;
     public GameObject play2win;
 
@@ -23,14 +24,8 @@ public class healthPoints : MonoBehaviour {
     void Death()
     {
         Destroy(gameObject);
-        gameEffect.LoadScene(2);
-        if(gameObject.tag=="Player 1" && hp<=0)
-        {
-            play2win.SetActive(true);
-        }else if(gameObject.tag=="Player 2"&& hp<=0)
-        {
-            play1win.SetActive(true);
-        }
+        SceneManager.LoadScene(2);
+       
 
     }
     void OnCollisionEnter2D(Collision2D collision)

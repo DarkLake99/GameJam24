@@ -51,5 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001aa4829d1641a4981fdae77d282a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  pauseButton: 0
+  pauseMenu: {fileID: 1647886378776950, guid: bd734fb33760c4fbbb9a56032e2b1c5f, type: 2}
+  pauseButton: 27

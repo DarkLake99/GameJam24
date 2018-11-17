@@ -18,11 +18,11 @@ public class bullets : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void OnTriggerEnter2D(Collider2D bulletHit)
+    void OnCollisionEnter2D(Collision2D bulletHit)
     {
-        if (bulletHit.gameObject.tag == "platform" || bulletHit.gameObject.tag == "ground" || bulletHit.gameObject.name == "player1" || bulletHit.gameObject.name == "player2")
+        if (bulletHit.gameObject.tag == "platform" || bulletHit.gameObject.tag == "ground" || bulletHit.gameObject.tag == "Player 1" || bulletHit.gameObject.tag == "Player 2")
         {
-            Debug.Log(bulletHit.name);
+            // Debug.Log(bulletHit.name);
             //Debug.Break();
             Destroy(gameObject);
         }
