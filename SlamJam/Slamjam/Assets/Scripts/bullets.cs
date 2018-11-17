@@ -7,6 +7,8 @@ public class bullets : MonoBehaviour
     public float speed = 20f;
     public float lifeTime = 3f;
     public Rigidbody2D rb;
+   
+
 
     // Use this for initialization
     public void InvokeDestroySelf()
@@ -18,12 +20,13 @@ public class bullets : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void OnCollisionEnter2D(Collision2D bulletHit)
+    void OnTriggerEnter2D(Collider2D bulletHit)
     {
-        if (bulletHit.gameObject.tag == "platform" || bulletHit.gameObject.tag == "ground" || bulletHit.gameObject.tag == "Player 1" || bulletHit.gameObject.tag == "Player 2")
+        if (bulletHit.gameObject.tag == "platform" || bulletHit.gameObject.tag == "ground" || bulletHit.gameObject.tag == "Player")
         {
             // Debug.Log(bulletHit.name);
             //Debug.Break();
+           
             Destroy(gameObject);
         }
     }
