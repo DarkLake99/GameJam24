@@ -132,6 +132,9 @@ MonoBehaviour:
   speed: 5
   jump: {x: 0, y: 5}
   active: {fileID: 50917685261893532}
+  facingRight: 1
+  HorizontalAxis: Horizontal
+  VerticalAxis: Jump
 --- !u!114 &114766050366993136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,7 +146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2241826cf1c24fecb23ea6a3b4309b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 4063727766482820}
+  bulletPrefab: {fileID: 1841941898108816, guid: d4e3e5bca21d94281a0edc6d6cd55753,
+    type: 2}
+  fireButton: Fire1
+  playerControl: {fileID: 114496469516980012}
+  bulletVelocity: 21
+  bulletDistance: 9
 --- !u!212 &212362628724298838
 SpriteRenderer:
   m_ObjectHideFlags: 1

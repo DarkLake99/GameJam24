@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212225980706970024}
   - component: {fileID: 50964832502143628}
   - component: {fileID: 61438925547743646}
-  - component: {fileID: 114797907384946580}
+  - component: {fileID: 114680351536833892}
+  - component: {fileID: 114370378374534984}
   m_Layer: 0
   m_Name: player2
   m_TagString: Player 2
@@ -30,6 +31,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1146202893605866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4701739764736226}
+  m_Layer: 0
+  m_Name: FirePoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4701739764736226
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1146202893605866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7, y: -0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4757447253792208}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4757447253792208
 Transform:
   m_ObjectHideFlags: 1
@@ -39,7 +68,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.52, y: -2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4701739764736226}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -88,7 +118,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114797907384946580
+--- !u!114 &114370378374534984
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,12 +126,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091541609285824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84ab7d1841aca43c89f9980b75019cc8, type: 3}
+  m_Script: {fileID: 11500000, guid: f2241826cf1c24fecb23ea6a3b4309b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 4701739764736226}
+  bulletPrefab: {fileID: 1841941898108816, guid: d4e3e5bca21d94281a0edc6d6cd55753,
+    type: 2}
+  fireButton: Fire2
+  playerControl: {fileID: 114680351536833892}
+  bulletVelocity: 21
+  bulletDistance: 9
+--- !u!114 &114680351536833892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091541609285824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d30591f2f9d469bbc5edc9bfbb6e7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
   jump: {x: 0, y: 5}
-  active2: {fileID: 50964832502143628}
+  active: {fileID: 50964832502143628}
+  facingRight: 1
+  HorizontalAxis: Horizontal-2
+  VerticalAxis: Jump-2
 --- !u!212 &212225980706970024
 SpriteRenderer:
   m_ObjectHideFlags: 1

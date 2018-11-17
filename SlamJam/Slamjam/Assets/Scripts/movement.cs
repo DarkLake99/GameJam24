@@ -8,12 +8,16 @@ public class movement : MonoBehaviour
     public float speed = 5f;
     public Vector2 jump;
     public Rigidbody2D active;
+    public bool facingRight = true;
+    public string HorizontalAxis = "Horizontal";
+    public string VerticalAxis = "Jump";
+
     // Use this for initialization
 
     // Update is called once per frame
     void Update()
     {
-        PlayerOne();
+        Player();
 
     }
     void OnCollisionEnter2D(Collision2D variable)
@@ -24,26 +28,52 @@ public class movement : MonoBehaviour
         }
        
     }
-    void PlayerOne()
+    void Player()
     {
-        if(gameObject.tag=="Player 1")
+        if(Input.GetButton(HorizontalAxis)||Input.GetButtonDown(VerticalAxis))
         {
-            if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow)))
+            float horz = Input.GetAxis(HorizontalAxis);
+            float vert = Input.GetAxis(VerticalAxis);
+         
+            if (Mathf.Abs(horz) > 0||Mathf.Abs(vert)>0)
             {
-                float input = Input.GetAxis("Horizontal");
-                transform.position = transform.position + new Vector3(input * speed * Time.deltaTime, 0, 0);
-                if (Input.GetKeyDown(KeyCode.UpArrow))
+               
+                transform.position = transform.position + new Vector3(horz * speed * Time.deltaTime, 0, 0);
+                if (Input.GetButtonDown(VerticalAxis))
                 {
-                    if(onGround)
+                    Debug.Log("Entered Jump code");
+                    if (onGround)
                     {
                         active.AddForce(jump, ForceMode2D.Impulse);
                         onGround = false;
                     }
-                   
+
                 }
 
+                if (horz > 0 && !facingRight)
+                {                   
+                    Flip();
+                    //transform.position = transform.position + new Vector3(horz * speed * Time.deltaTime, 0, 0);
+                }
+                else if (horz < 0 && facingRight)
+                {                   
+                    Flip();
+                   // transform.position = transform.position + new Vector3(horz * speed * Time.deltaTime, 0, 0);
+                }
             }
+           
+
         }
     }
-  
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        facingRight = !facingRight;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+
 }
