@@ -20,10 +20,12 @@ public class bullets : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D bulletHit)
     {
-        Debug.Log(bulletHit.name);
-        //Debug.Break();
-        Destroy(gameObject);
-        
+        if (bulletHit.gameObject.tag == "platform" || bulletHit.gameObject.tag == "ground" || bulletHit.gameObject.name == "player1" || bulletHit.gameObject.name == "player2")
+        {
+            Debug.Log(bulletHit.name);
+            //Debug.Break();
+            Destroy(gameObject);
+        }
     }
 
     void OnBecameInvisible()

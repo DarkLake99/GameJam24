@@ -356,6 +356,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.14667816
       objectReference: {fileID: 0}
+    - target: {fileID: 1466082990278296, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
   m_IsPrefabAsset: 0
@@ -1532,6 +1536,16 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61438925547743646, guid: 66a7a5ac448724421bc62776c16f8eac,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61438925547743646, guid: 66a7a5ac448724421bc62776c16f8eac,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66a7a5ac448724421bc62776c16f8eac, type: 2}
   m_IsPrefabAsset: 0
@@ -1694,6 +1708,10 @@ Prefab:
     - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
       propertyPath: m_Name
       value: Platforms (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
@@ -2249,6 +2267,10 @@ Prefab:
     - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
       propertyPath: m_Name
       value: Platforms (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
@@ -2920,6 +2942,10 @@ Prefab:
       propertyPath: m_Name
       value: Platforms (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
   m_IsPrefabAsset: 0
@@ -3047,6 +3073,10 @@ Prefab:
     - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
       propertyPath: m_Name
       value: Platforms (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
@@ -3944,6 +3974,10 @@ Prefab:
     - target: {fileID: 4796492571144010, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
       propertyPath: m_LocalScale.x
       value: 3.3627958
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
@@ -4875,6 +4909,10 @@ Prefab:
     - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
       propertyPath: m_Name
       value: Platforms (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
