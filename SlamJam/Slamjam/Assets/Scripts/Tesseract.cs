@@ -69,6 +69,8 @@ public class Tesseract : MonoBehaviour
 		GenerateVertices(_vertices);
 
 		_mesh.vertices = _vertices;
+
+        Invoke("destroyObject", 10f);
 	}
 
 	/// <summary>
@@ -154,6 +156,9 @@ public class Tesseract : MonoBehaviour
 
 		targetMesh.SetIndices(indices,MeshTopology.Triangles,submesh);
 	}
-
+    void destroyObject()
+    {
+        Destroy(gameObject);
+    }
 }
 
