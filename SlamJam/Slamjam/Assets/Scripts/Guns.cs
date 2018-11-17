@@ -8,6 +8,7 @@ public class Guns : MonoBehaviour {
     public bool haveGun = false;
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public GameObject gunPrefab;
 
     public string fireButton = "Fire1";
     //public movement playerControl;
@@ -17,6 +18,8 @@ public class Guns : MonoBehaviour {
 
     private float bulletVelocity;
     private float bulletDistance;
+    private Vector3 offset = new Vector3(2, 0, 0);
+    private GameObject gun;
 
     // Update is called once per frame
     void Update()
@@ -37,28 +40,21 @@ public class Guns : MonoBehaviour {
             bulletVelocity = 20f;
             Destroy(collision.gameObject);
             bulletPrefab = Resources.Load("bullet1") as GameObject;
-            if (bulletPrefab)
-            {
-                Debug.Log("picked up!");
-            }
             haveGun = true;
         }
         if (collision.gameObject.tag == "Laser")
         {
             bulletDistance = 20f;
-            bulletVelocity = 40f;
+            bulletVelocity = 30f;
             Destroy(collision.gameObject);
             bulletPrefab = Resources.Load("Laser") as GameObject;
-            if (bulletPrefab)
-            {
-                Debug.Log("picked up!");
-            }
+            gunPrefab = Resources.Load("LaserShoot") as GameObject;
             haveGun = true;
         }
     }
     void Shoot()
         {
-            //shooting logic
+        //shooting logic
             GameObject bullet = GameObject.Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.velocity = transform.right * bulletVelocity * ((characterController.m_FacingRight) ? 1 : -1);
@@ -66,4 +62,5 @@ public class Guns : MonoBehaviour {
             b.lifeTime = bulletDistance / bulletVelocity;
             b.InvokeDestroySelf();
         }
+
 }
