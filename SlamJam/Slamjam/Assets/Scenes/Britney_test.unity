@@ -122,7 +122,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4721660088888104, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.164
+      value: 3.823
       objectReference: {fileID: 0}
     - target: {fileID: 4721660088888104, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -155,6 +155,14 @@ Prefab:
     - target: {fileID: 1466082990278296, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
       propertyPath: m_TagString
       value: ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 4721660088888104, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 52.903652
+      objectReference: {fileID: 0}
+    - target: {fileID: 4721660088888104, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7014652
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f85050725f53b4e818c19a5de129bb4a, type: 2}
@@ -245,9 +253,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1690339149}
   - component: {fileID: 1690339148}
-  - component: {fileID: 1690339147}
   - component: {fileID: 1690339151}
   - component: {fileID: 1690339150}
+  - component: {fileID: 1690339147}
   m_Layer: 0
   m_Name: player2
   m_TagString: Player 2
@@ -263,11 +271,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1690339146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04d30591f2f9d469bbc5edc9bfbb6e7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 84ab7d1841aca43c89f9980b75019cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jump: 5
+  jump: {x: 0, y: 5}
+  active2: {fileID: 1690339151}
 --- !u!212 &1690339148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -321,7 +330,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1690339146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.52, y: -2.35, z: 0}
+  m_LocalPosition: {x: 3.52, y: -2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -403,7 +412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jump: 5
+  jump: {x: 0, y: 5}
+  active: {fileID: 2118121701}
 --- !u!50 &2118121701
 Rigidbody2D:
   serializedVersion: 4
