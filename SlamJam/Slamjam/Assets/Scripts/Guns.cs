@@ -8,7 +8,6 @@ public class Guns : MonoBehaviour {
     public bool haveGun = false;
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public GameObject gunPrefab;
 
     public string fireButton = "Fire1";
     //public movement playerControl;
@@ -18,8 +17,7 @@ public class Guns : MonoBehaviour {
 
     private float bulletVelocity;
     private float bulletDistance;
-    private Vector3 offset = new Vector3(2, 0, 0);
-    private GameObject gun;
+
 
     // Update is called once per frame
     void Update()
@@ -48,7 +46,14 @@ public class Guns : MonoBehaviour {
             bulletVelocity = 30f;
             Destroy(collision.gameObject);
             bulletPrefab = Resources.Load("Laser") as GameObject;
-            gunPrefab = Resources.Load("LaserShoot") as GameObject;
+            haveGun = true;
+        }
+        if (collision.gameObject.tag == "Blast")
+        {
+            bulletDistance = 2f;
+            bulletVelocity = 30f;
+            Destroy(collision.gameObject);
+            bulletPrefab = Resources.Load("Blast") as GameObject;
             haveGun = true;
         }
     }
