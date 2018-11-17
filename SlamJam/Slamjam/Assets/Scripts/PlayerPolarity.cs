@@ -5,15 +5,18 @@ using UnityEngine;
 public class PlayerPolarity : MonoBehaviour {
     public bool positiveSide;
     // Use this for initialization
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (positiveSide)
+        if (collision.gameObject.tag == "Portal")
         {
-            positiveSide = false;
-        }
-        else
-        {
-            positiveSide = true;
+            if (positiveSide)
+            {
+                positiveSide = false;
+            }
+            else
+            {
+                positiveSide = true;
+            }
         }
     }
 

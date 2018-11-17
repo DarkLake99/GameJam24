@@ -984,6 +984,10 @@ Prefab:
       propertyPath: m_Name
       value: Platforms (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
@@ -1383,6 +1387,11 @@ Prefab:
     - target: {fileID: 4757447253792208, guid: 66a7a5ac448724421bc62776c16f8eac, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680351536833892, guid: 66a7a5ac448724421bc62776c16f8eac,
+        type: 2}
+      propertyPath: jump.y
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66a7a5ac448724421bc62776c16f8eac, type: 2}
@@ -2535,6 +2544,10 @@ Prefab:
       propertyPath: m_Name
       value: Platforms (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
@@ -3082,6 +3095,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114496469516980012, guid: 75eab5d31480c4248b6b1c466d7221ce,
+        type: 2}
+      propertyPath: jump.y
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75eab5d31480c4248b6b1c466d7221ce, type: 2}
   m_IsPrefabAsset: 0
@@ -3399,6 +3417,10 @@ Prefab:
     - target: {fileID: 4796492571144010, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786731148574114, guid: b4797ee5384dd475d830d80b32c6b729, type: 2}
+      propertyPath: m_TagString
+      value: ground
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

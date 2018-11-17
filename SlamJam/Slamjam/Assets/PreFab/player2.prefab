@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61438925547743646}
   - component: {fileID: 114680351536833892}
   - component: {fileID: 114370378374534984}
+  - component: {fileID: 114509246503051500}
   m_Layer: 0
   m_Name: player2
   m_TagString: Player 2
@@ -67,7 +68,7 @@ Transform:
   m_GameObject: {fileID: 1091541609285824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.52, y: -2.04, z: 0}
-  m_LocalScale: {x: 0.51593, y: 0.51593, z: 0.51593}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4701739764736226}
   m_Father: {fileID: 0}
@@ -136,6 +137,18 @@ MonoBehaviour:
   playerControl: {fileID: 114680351536833892}
   bulletVelocity: 21
   bulletDistance: 9
+--- !u!114 &114509246503051500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091541609285824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac41e82fbc8a2d479e94ccecd2bd05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positiveSide: 1
 --- !u!114 &114680351536833892
 MonoBehaviour:
   m_ObjectHideFlags: 1
