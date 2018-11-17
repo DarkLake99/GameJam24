@@ -8,14 +8,6 @@ public class playerCollision : MonoBehaviour {
         if (other.gameObject.tag == "Player 1" || other.gameObject.tag == "Player 2")
         {
             Destroy(gameObject);
-            if (other.GetComponent<PlayerPolarity>().positiveSide == true)
-            {
-                other.GetComponent<PlayerPolarity>().positiveSide = false;
-            }
-            else
-            {
-                other.GetComponent<PlayerPolarity>().positiveSide = true;
-            }
         }
     }
 }

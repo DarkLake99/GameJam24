@@ -7,16 +7,7 @@ public class GameManager : MonoBehaviour {
     public static bool gameIsPaused = false;
     public GameObject pauseMenu;
     public KeyCode pauseButton;
-    //Weapons
-    public GameObject[] weapons;
-    public Transform[] spawnWeaLocations;
-    private float timeWeaSpawns;
-    public float timeWeaBTWs;
     //Use this for initialization
-    private void Start()
-    {
-        timeWeaSpawns = timeWeaBTWs;
-    }
      // Update is called once per frame
     void Update()
     {
@@ -31,18 +22,6 @@ public class GameManager : MonoBehaviour {
                 gameIsPaused = true;
             }
 
-        }
-
-        //weapons
-        if (timeWeaSpawns <= 0)
-        {
-            int randWeaInd = Random.Range(0, weapons.Length);
-            int randWeaLocInd = Random.Range(0, spawnWeaLocations.Length);
-            Instantiate(weapons[randWeaInd], spawnWeaLocations[randWeaLocInd].position, Quaternion.identity);
-        }
-        else
-        {
-            timeWeaSpawns -= Time.deltaTime;
         }
     }
     public void Resume()
