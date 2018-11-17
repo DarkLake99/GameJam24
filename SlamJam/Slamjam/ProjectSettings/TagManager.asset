@@ -7,6 +7,7 @@ TagManager:
   - ground
   - Player 1
   - Player 2
+  - Portal
   layers:
   - Default
   - TransparentFX

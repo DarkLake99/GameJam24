@@ -5147,6 +5147,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2126591060}
   - component: {fileID: 2126591058}
+  - component: {fileID: 2126591059}
+  - component: {fileID: 2126591061}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5167,6 +5169,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 620846380}
   pauseButton: 112
+--- !u!114 &2126591059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2126591057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d886bf0a21c242f4cb442f5fd429845d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   portal: {fileID: 1354050568585686, guid: 221a07994e29571458d9340799c1646c, type: 2}
   spawnLocations:
   - {fileID: 1551724999}
@@ -5175,17 +5188,6 @@ MonoBehaviour:
   - {fileID: 781739535}
   - {fileID: 825807954}
   timeBTWspawns: 10
-  weapons: []
-  spawnWeaLocations:
-  - {fileID: 824246922}
-  - {fileID: 942454343}
-  - {fileID: 435554280}
-  - {fileID: 346292360}
-  - {fileID: 1946115966}
-  - {fileID: 238418391}
-  - {fileID: 2081307199}
-  - {fileID: 2060697081}
-  timeWeaBTWs: 5
 --- !u!4 &2126591060
 Transform:
   m_ObjectHideFlags: 0
@@ -5200,6 +5202,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2126591061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2126591057}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f0731282a665f40ada8d7a6b20019e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons: []
+  spawnWeaLocations: []
+  timeWeaBTWs: 0
 --- !u!1 &2126684699
 GameObject:
   m_ObjectHideFlags: 0

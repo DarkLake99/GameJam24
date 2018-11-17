@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114066568153304212}
   m_Layer: 0
   m_Name: Tesseract
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,9 +172,9 @@ MonoBehaviour:
     rgba: 4282732344
   - serializedVersion: 2
     rgba: 4281609235
-  rotationXY: 29534.66
+  rotationXY: 29674.867
   rotationYZ: 0
-  rotationZX: 29534.66
+  rotationZX: 29674.867
   rotationXW: 0
-  rotationYW: 29534.66
+  rotationYW: 29674.867
   rotationZW: 0
