@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 847006244}
   - component: {fileID: 847006243}
   m_Layer: 5
-  m_Name: play1 win
+  m_Name: play1win
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 1772254217}
   - component: {fileID: 1772254216}
   m_Layer: 5
-  m_Name: play2 win
+  m_Name: play2win
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
