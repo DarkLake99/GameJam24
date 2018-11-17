@@ -5445,7 +5445,33 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4487082662837392, guid: 694e12a11b2cf4067b7dbe12fa8e8c49, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212099047720556224, guid: 694e12a11b2cf4067b7dbe12fa8e8c49,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a6c1088b051bc4911bbb3b2a1b94bc12,
+        type: 3}
+    - target: {fileID: 95305428077453552, guid: 694e12a11b2cf4067b7dbe12fa8e8c49,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e5a844d968e8e41de814225e345dff3f, type: 2}
+    - target: {fileID: 114711719408646348, guid: 694e12a11b2cf4067b7dbe12fa8e8c49,
+        type: 2}
+      propertyPath: jumpButton
+      value: Jump-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114711719408646348, guid: 694e12a11b2cf4067b7dbe12fa8e8c49,
+        type: 2}
+      propertyPath: horizontalAxis
+      value: Horizontal-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114711719408646348, guid: 694e12a11b2cf4067b7dbe12fa8e8c49,
+        type: 2}
+      propertyPath: negHorizontalAxis
+      value: Vertical-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694e12a11b2cf4067b7dbe12fa8e8c49, type: 2}
