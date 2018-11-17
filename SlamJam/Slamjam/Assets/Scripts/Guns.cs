@@ -17,6 +17,9 @@ public class Guns : MonoBehaviour {
 
     private float bulletVelocity;
     private float bulletDistance;
+    public AudioSource pistolGun;
+    public AudioSource laserGun;
+    public AudioSource blastGun;
 
 
     // Update is called once per frame
@@ -59,6 +62,19 @@ public class Guns : MonoBehaviour {
     }
     void Shoot()
         {
+        if(gameObject.tag=="pistolBullet")
+        {
+            pistolGun.Play();
+        }
+        else if(gameObject.tag == "Laser")
+        {
+            laserGun.Play();
+        }
+        else if(gameObject.tag == "Blast")
+        {
+            blastGun.Play();
+        }
+       
         //shooting logic
             GameObject bullet = GameObject.Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

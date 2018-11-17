@@ -12,7 +12,7 @@ namespace UnityStandardAssets._2D
         public string jumpButton = "Jump";
         public string horizontalAxis = "Horizontal";
         public string negHorizontalAxis = "Vertical";
-
+       
 
         private void Awake()
         {

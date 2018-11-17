@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class healthPoints : MonoBehaviour
 {
@@ -10,7 +11,38 @@ public class healthPoints : MonoBehaviour
     public float hp = 100f;
     public float damage = 2f;
     private bool invisible=false;
-   
+
+    //public UnityEvent dead1;
+    //public UnityEvent dead2;
+    //public float timeOut=10f;
+    //public float saveTime;
+
+    ////  public GameManager gameEffect;
+    //public GameObject player1;
+    //public GameObject play2;
+    ////public PlayerPolarity portal;
+    // void Start()
+    //{
+    //    saveTime = timeOut;
+    //}
+
+    //// Update is called once per frame
+    //void Update()
+    //{
+        //if (invisible)
+        //{
+        //    timeOut -= Time.deltaTime;
+        //    if (player1.GetComponent<healthPoints>().hp <= 0)
+        //    {
+        //        dead1.Invoke();
+        //        //   deathAl.Play();
+        //    }
+        //    else if (play2.GetComponent<healthPoints>().hp <= 0)
+        //    {
+        //        dead2.Invoke();
+        //    }
+
+        //}
     public float timeOut=10f;
     public float saveTime;
     //  public GameManager gameEffect;
@@ -30,20 +62,26 @@ public class healthPoints : MonoBehaviour
         if (invisible)
         {
             timeOut -= Time.deltaTime;
+
         }
        
         if (hp <= 0 || timeOut <= 0)
         {
-            Death();
+           Death();
+
         }
        
     }
     void Death()
     {
+
+
         Destroy(gameObject);
-        SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2);
     }
 
+
+    
     void OnTriggerEnter2D(Collider2D bulletHit)
     {
         string checkPlayer1 = player1.GetComponent<PlayerPolarity>().CheckString();

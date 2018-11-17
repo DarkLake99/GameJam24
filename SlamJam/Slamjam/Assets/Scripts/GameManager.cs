@@ -13,9 +13,12 @@ public class GameManager : MonoBehaviour {
     public GameObject play1win;
     public GameObject play2win;
     private healthPoints health;
+    public AudioSource sound;
+    public AudioSource sound2;
+    public AudioSource background;
 
     //Use this for initialization
-     // Update is called once per frame
+    // Update is called once per frame
     void Update()
     {
         if(winner)
@@ -35,6 +38,9 @@ public class GameManager : MonoBehaviour {
             //pause the game
             if (gameIsPaused == false)
             {
+                background.Pause();
+                sound.Play();
+
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0f;
                 gameIsPaused = true;
@@ -44,6 +50,8 @@ public class GameManager : MonoBehaviour {
     }
     public void Resume()
     {
+        sound2.Play();
+        background.Play();
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
