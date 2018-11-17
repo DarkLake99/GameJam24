@@ -29,7 +29,10 @@ public class UIController : MonoBehaviour {
 
 	protected void Update()
 	{
-        Invoke("SwitchTarget", 10f);
+        if (FindObjectOfType<Tesseract>() != null)
+        {
+            SwitchTarget();
+        }
 		if(_toggleAutoRotate.isOn){
             float amount = kRotationSpeed*Time.deltaTime;
 			target.rotationXY += amount;
