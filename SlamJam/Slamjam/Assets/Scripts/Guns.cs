@@ -37,7 +37,7 @@ public class Guns : MonoBehaviour {
             bulletDistance = 8f;
             bulletVelocity = 20f;
             Destroy(collision.gameObject);
-            bulletPrefab = Resources.Load("bullet1") as GameObject;
+            bulletPrefab = Resources.Load("bullet2") as GameObject;
             haveGun = true;
         }
         if (collision.gameObject.tag == "Laser")
