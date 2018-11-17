@@ -44,11 +44,17 @@ public class healthPoints : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D bulletHit)
     {
-        if (bulletHit.gameObject.tag == "Bullet" )
+        if (bulletHit.gameObject.tag == "Pistol")
         {
+            damage = 1f;
             // Debug.Log(bulletHit.name);
             //Debug.Break();
             hp = hp - damage;
+        }
+        else if(bulletHit.gameObject.tag == "Laser")
+        {
+            damage = 2f;
+            hp = hp - damage; 
         }
 
     }
