@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 82222669986121340}
   - component: {fileID: 82306177953132862}
   - component: {fileID: 82763778859892840}
+  - component: {fileID: 114359535645316586}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -190,7 +191,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.375, y: 1.375}
+    oldSize: {x: 1.7066667, y: 1.7066667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -588,7 +589,7 @@ Animator:
   m_GameObject: {fileID: 1086320680604904}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5fc43f0c4b413534ba12c51c0e5e5f6f, type: 2}
+  m_Controller: {fileID: 9100000, guid: e5a844d968e8e41de814225e345dff3f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -637,6 +638,18 @@ MonoBehaviour:
   pistolGun: {fileID: 82628668571019532}
   laserGun: {fileID: 82306177953132862}
   blastGun: {fileID: 82222669986121340}
+--- !u!114 &114359535645316586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1086320680604904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac41e82fbc8a2d479e94ccecd2bd05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positiveSide: 0
 --- !u!114 &114684913614919360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,8 +679,6 @@ MonoBehaviour:
   damage: 2
   timeOut: 2
   saveTime: 0
-  deathAl: {fileID: 82763778859892840}
-  deathRob: {fileID: 0}
 --- !u!212 &212676151659643684
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -703,9 +714,9 @@ SpriteRenderer:
   m_SortingLayerID: -1783731295
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8fb98a6035269e64a998f9b56828fc4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a6c1088b051bc4911bbb3b2a1b94bc12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}

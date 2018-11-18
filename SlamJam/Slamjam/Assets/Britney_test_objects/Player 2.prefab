@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 82156929105613292}
   - component: {fileID: 82872622565448278}
   - component: {fileID: 82348034439524448}
+  - component: {fileID: 114945551355246354}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player
@@ -104,7 +105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1271844172155938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.22, z: 0}
+  m_LocalPosition: {x: -0.89, y: -0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4517300039520740}
@@ -190,7 +191,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.375, y: 1.375}
+    oldSize: {x: 1.7066667, y: 1.7066667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -588,7 +589,7 @@ Animator:
   m_GameObject: {fileID: 1329187012535516}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5fc43f0c4b413534ba12c51c0e5e5f6f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1256fb7aa2be449858154edc19f79e71, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -636,7 +637,7 @@ MonoBehaviour:
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_FacingRight: 1
+  m_FacingRight: 0
 --- !u!114 &114639239499395712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,8 +667,18 @@ MonoBehaviour:
   damage: 2
   timeOut: 2
   saveTime: 0
-  deathAl: {fileID: 0}
-  deathRob: {fileID: 82348034439524448}
+--- !u!114 &114945551355246354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329187012535516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac41e82fbc8a2d479e94ccecd2bd05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positiveSide: 0
 --- !u!212 &212982129260642788
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -703,7 +714,7 @@ SpriteRenderer:
   m_SortingLayerID: -1783731295
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8fb98a6035269e64a998f9b56828fc4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0b1805d6b582422589ec1f3826a4b18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
